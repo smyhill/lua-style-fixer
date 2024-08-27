@@ -14,5 +14,5 @@ function fix_changed_files(files, command)
     io.write("Files Checked:" .. "\n" .. files)
 end
 
--- get changed files in dir this command is run and then run php-cs-fixer on them -- this does need updates to work now
+-- get changed files in dir this command is run and then run php-cs-fixer on them
 fix_changed_files(GIT_DIFF_FILENAMES, PHP_FIXER)
